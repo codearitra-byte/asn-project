@@ -1,0 +1,12 @@
+{"timestamp":"2026-02-21T08:29:11.700043Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-02-21T08:29:11.701710Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/asn_pipeline_dag.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-02-21T08:29:11.767920Z","level":"warning","event":"The `airflow.operators.python.PythonOperator` attribute is deprecated. Please use `'airflow.providers.standard.operators.python.PythonOperator'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/asn_pipeline_dag.py","lineno":2,"logger":"py.warnings"}
+{"timestamp":"2026-02-21T08:29:11.796056Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2026-02-21T08:29:11.796633Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2026-02-21T08:29:11.796984Z","level":"info","event":"Current task name:extract_asn","logger":"task.stdout"}
+{"timestamp":"2026-02-21T08:29:11.797271Z","level":"info","event":"Dag name:asn_pipeline","logger":"task.stdout"}
+{"timestamp":"2026-02-21T08:29:11.801995Z","level":"info","event":"Downloading: https://ftp.arin.net/pub/stats/arin/delegated-arin-extended-latest","logger":"task.stdout"}
+{"timestamp":"2026-02-21T08:29:21.843375Z","level":"error","event":"Server indicated the task shouldn't be running anymore. Terminating process","detail":{"detail":{"reason":"not_found","message":"Task Instance not found"}},"logger":"task"}
+{"timestamp":"2026-02-21T08:29:23.154845Z","level":"info","event":"Completed: https://ftp.arin.net/pub/stats/arin/delegated-arin-extended-latest","logger":"task.stdout"}
+{"timestamp":"2026-02-21T08:29:23.155415Z","level":"info","event":"Downloading: https://ftp.ripe.net/pub/stats/ripencc/delegated-ripencc-extended-latest","logger":"task.stdout"}
+{"timestamp":"2026-02-21T08:29:26.869522Z","level":"error","event":"Task killed!","logger":"task"}

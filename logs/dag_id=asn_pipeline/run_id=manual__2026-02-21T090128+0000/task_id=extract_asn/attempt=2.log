@@ -1,0 +1,20 @@
+{"timestamp":"2026-02-21T09:16:00.403498Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-02-21T09:16:00.410807Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/asn_pipeline_dag.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-02-21T09:16:00.544005Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2026-02-21T09:16:00.547217Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2026-02-21T09:16:00.552891Z","level":"info","event":"Current task name:extract_asn","logger":"task.stdout"}
+{"timestamp":"2026-02-21T09:16:00.557161Z","level":"info","event":"Dag name:asn_pipeline","logger":"task.stdout"}
+{"timestamp":"2026-02-21T09:16:00.559237Z","level":"info","event":"Downloading: https://ftp.arin.net/pub/stats/arin/delegated-arin-extended-latest","logger":"task.stdout"}
+{"timestamp":"2026-02-21T09:16:43.687385Z","level":"info","event":"Completed: https://ftp.arin.net/pub/stats/arin/delegated-arin-extended-latest","logger":"task.stdout"}
+{"timestamp":"2026-02-21T09:16:43.688784Z","level":"info","event":"Downloading: https://ftp.ripe.net/pub/stats/ripencc/delegated-ripencc-extended-latest","logger":"task.stdout"}
+{"timestamp":"2026-02-21T09:18:18.683628Z","level":"info","event":"ChunkedEncodingError for https://ftp.ripe.net/pub/stats/ripencc/delegated-ripencc-extended-latest, retry 1/5: ('Connection broken: IncompleteRead(2244321 bytes read, 15494434 more expected)', IncompleteRead(2244321 bytes read, 15494434 more expected))","logger":"task.stdout"}
+{"timestamp":"2026-02-21T09:18:56.250776Z","level":"info","event":"ChunkedEncodingError for https://ftp.ripe.net/pub/stats/ripencc/delegated-ripencc-extended-latest, retry 2/5: ('Connection broken: IncompleteRead(327393 bytes read, 17411362 more expected)', IncompleteRead(327393 bytes read, 17411362 more expected))","logger":"task.stdout"}
+{"timestamp":"2026-02-21T09:20:01.306178Z","level":"info","event":"ChunkedEncodingError for https://ftp.ripe.net/pub/stats/ripencc/delegated-ripencc-extended-latest, retry 3/5: ('Connection broken: IncompleteRead(3243745 bytes read, 14495010 more expected)', IncompleteRead(3243745 bytes read, 14495010 more expected))","logger":"task.stdout"}
+{"timestamp":"2026-02-21T09:20:52.650336Z","level":"info","event":"ChunkedEncodingError for https://ftp.ripe.net/pub/stats/ripencc/delegated-ripencc-extended-latest, retry 4/5: ('Connection broken: IncompleteRead(327393 bytes read, 17411362 more expected)', IncompleteRead(327393 bytes read, 17411362 more expected))","logger":"task.stdout"}
+{"timestamp":"2026-02-21T09:23:12.911379Z","level":"info","event":"Failed to download https://ftp.ripe.net/pub/stats/ripencc/delegated-ripencc-extended-latest: HTTPSConnectionPool(host='ftp.ripe.net', port=443): Read timed out.","logger":"task.stdout"}
+{"timestamp":"2026-02-21T09:23:12.920120Z","level":"info","event":"Downloading: https://ftp.apnic.net/pub/stats/apnic/delegated-apnic-extended-latest","logger":"task.stdout"}
+{"timestamp":"2026-02-21T09:23:21.088484Z","level":"info","event":"Completed: https://ftp.apnic.net/pub/stats/apnic/delegated-apnic-extended-latest","logger":"task.stdout"}
+{"timestamp":"2026-02-21T09:23:21.089778Z","level":"info","event":"Downloading: https://ftp.lacnic.net/pub/stats/lacnic/delegated-lacnic-extended-latest","logger":"task.stdout"}
+{"timestamp":"2026-02-21T09:23:27.848863Z","level":"info","event":"Completed: https://ftp.lacnic.net/pub/stats/lacnic/delegated-lacnic-extended-latest","logger":"task.stdout"}
+{"timestamp":"2026-02-21T09:23:27.849639Z","level":"info","event":"Downloading: https://ftp.afrinic.net/pub/stats/afrinic/delegated-afrinic-extended-latest","logger":"task.stdout"}
+{"timestamp":"2026-02-21T09:25:11.350662Z","level":"info","event":"Completed: https://ftp.afrinic.net/pub/stats/afrinic/delegated-afrinic-extended-latest","logger":"task.stdout"}

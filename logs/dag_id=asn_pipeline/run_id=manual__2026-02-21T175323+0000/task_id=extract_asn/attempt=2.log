@@ -1,0 +1,17 @@
+{"timestamp":"2026-02-21T17:55:31.501924Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-02-21T17:55:31.508023Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/asn_pipeline_dag.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-02-21T17:55:31.772275Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2026-02-21T17:55:31.773028Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2026-02-21T17:55:31.773768Z","level":"info","event":"Current task name:extract_asn","logger":"task.stdout"}
+{"timestamp":"2026-02-21T17:55:31.774212Z","level":"info","event":"Dag name:asn_pipeline","logger":"task.stdout"}
+{"timestamp":"2026-02-21T17:55:31.788415Z","level":"info","event":"Downloading: https://ftp.arin.net/pub/stats/arin/delegated-arin-extended-latest","logger":"task.stdout"}
+{"timestamp":"2026-02-21T17:55:53.508051Z","level":"info","event":"Completed: https://ftp.arin.net/pub/stats/arin/delegated-arin-extended-latest","logger":"task.stdout"}
+{"timestamp":"2026-02-21T17:55:53.511497Z","level":"info","event":"Downloading: https://ftp.ripe.net/pub/stats/ripencc/delegated-ripencc-extended-latest","logger":"task.stdout"}
+{"timestamp":"2026-02-21T17:58:49.603402Z","level":"info","event":"Failed to download https://ftp.ripe.net/pub/stats/ripencc/delegated-ripencc-extended-latest: ('Connection broken: IncompleteRead(4013793 bytes read, 13724962 more expected)', IncompleteRead(4013793 bytes read, 13724962 more expected))","logger":"task.stdout"}
+{"timestamp":"2026-02-21T17:58:49.604679Z","level":"info","event":"Downloading: https://ftp.apnic.net/pub/stats/apnic/delegated-apnic-extended-latest","logger":"task.stdout"}
+{"timestamp":"2026-02-21T17:59:45.871747Z","level":"info","event":"Completed: https://ftp.apnic.net/pub/stats/apnic/delegated-apnic-extended-latest","logger":"task.stdout"}
+{"timestamp":"2026-02-21T17:59:45.873151Z","level":"info","event":"Downloading: https://ftp.lacnic.net/pub/stats/lacnic/delegated-lacnic-extended-latest","logger":"task.stdout"}
+{"timestamp":"2026-02-21T17:59:58.558957Z","level":"info","event":"Completed: https://ftp.lacnic.net/pub/stats/lacnic/delegated-lacnic-extended-latest","logger":"task.stdout"}
+{"timestamp":"2026-02-21T17:59:58.559674Z","level":"info","event":"Downloading: https://ftp.afrinic.net/pub/stats/afrinic/delegated-afrinic-extended-latest","logger":"task.stdout"}
+{"timestamp":"2026-02-21T18:04:11.036557Z","level":"info","event":"Failed to download https://ftp.afrinic.net/pub/stats/afrinic/delegated-afrinic-extended-latest: HTTPSConnectionPool(host='ftp.afrinic.net', port=443): Read timed out.","logger":"task.stdout"}
+{"timestamp":"2026-02-21T18:04:14.707813Z","level":"info","event":"Total ASNs fetched: 85209","logger":"task.stdout"}

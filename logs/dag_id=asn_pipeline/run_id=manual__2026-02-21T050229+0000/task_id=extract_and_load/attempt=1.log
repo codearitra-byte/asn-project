@@ -1,0 +1,22 @@
+{"timestamp":"2026-02-21T05:03:10.674134Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-02-21T05:03:10.679007Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/asn_pipeline_dag.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-02-21T05:03:10.816702Z","level":"warning","event":"The `airflow.operators.python.PythonOperator` attribute is deprecated. Please use `'airflow.providers.standard.operators.python.PythonOperator'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/asn_pipeline_dag.py","lineno":2,"logger":"py.warnings"}
+{"timestamp":"2026-02-21T05:03:11.049390Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2026-02-21T05:03:11.054874Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2026-02-21T05:03:11.056119Z","level":"info","event":"Current task name:extract_and_load","logger":"task.stdout"}
+{"timestamp":"2026-02-21T05:03:11.058058Z","level":"info","event":"Dag name:asn_pipeline","logger":"task.stdout"}
+{"timestamp":"2026-02-21T05:03:11.190925Z","level":"info","event":"Downloading: https://ftp.arin.net/pub/stats/arin/delegated-arin-extended-latest","logger":"task.stdout"}
+{"timestamp":"2026-02-21T05:03:22.454173Z","level":"info","event":"Completed: https://ftp.arin.net/pub/stats/arin/delegated-arin-extended-latest","logger":"task.stdout"}
+{"timestamp":"2026-02-21T05:03:22.455146Z","level":"info","event":"Downloading: https://ftp.ripe.net/pub/stats/ripencc/delegated-ripencc-extended-latest","logger":"task.stdout"}
+{"timestamp":"2026-02-21T05:04:44.196526Z","level":"info","event":"Failed to download https://ftp.ripe.net/pub/stats/ripencc/delegated-ripencc-extended-latest: ('Connection broken: IncompleteRead(9158369 bytes read, 8580386 more expected)', IncompleteRead(9158369 bytes read, 8580386 more expected))","logger":"task.stdout"}
+{"timestamp":"2026-02-21T05:04:44.198140Z","level":"info","event":"Downloading: https://ftp.apnic.net/pub/stats/apnic/delegated-apnic-extended-latest","logger":"task.stdout"}
+{"timestamp":"2026-02-21T05:04:50.543777Z","level":"info","event":"Completed: https://ftp.apnic.net/pub/stats/apnic/delegated-apnic-extended-latest","logger":"task.stdout"}
+{"timestamp":"2026-02-21T05:04:50.545709Z","level":"info","event":"Downloading: https://ftp.lacnic.net/pub/stats/lacnic-extended-latest","logger":"task.stdout"}
+{"timestamp":"2026-02-21T05:04:52.390988Z","level":"info","event":"Failed to download https://ftp.lacnic.net/pub/stats/lacnic-extended-latest: 404 Client Error: Not Found for url: https://ftp.lacnic.net/pub/stats/lacnic-extended-latest","logger":"task.stdout"}
+{"timestamp":"2026-02-21T05:04:52.391717Z","level":"info","event":"Downloading: https://ftp.afrinic.net/pub/stats/afrinic-delegated-extended-latest","logger":"task.stdout"}
+{"timestamp":"2026-02-21T05:04:55.867798Z","level":"info","event":"Failed to download https://ftp.afrinic.net/pub/stats/afrinic-delegated-extended-latest: 404 Client Error: Not Found for url: https://ftp.afrinic.net/pub/stats/afrinic-delegated-extended-latest","logger":"task.stdout"}
+{"timestamp":"2026-02-21T05:04:55.869135Z","level":"info","event":"All RIR files processed successfully.","logger":"task.stdout"}
+{"timestamp":"2026-02-21T05:04:55.877521Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":216}
+{"timestamp":"2026-02-21T05:04:56.232541Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2026-02-21T05:04:56.233270Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2026-02-21T05:04:56.234308Z","level":"info","event":"Task operator:<Task(PythonOperator): extract_and_load>","logger":"task.stdout"}

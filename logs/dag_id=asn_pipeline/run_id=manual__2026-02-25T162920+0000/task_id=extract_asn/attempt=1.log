@@ -1,0 +1,22 @@
+{"timestamp":"2026-02-25T16:29:51.070996Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-02-25T16:29:51.073764Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/asn_pipeline_dag.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-02-25T16:29:51.412647Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2026-02-25T16:29:51.414352Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2026-02-25T16:29:51.419044Z","level":"info","event":"Current task name:extract_asn","logger":"task.stdout"}
+{"timestamp":"2026-02-25T16:29:51.419611Z","level":"info","event":"Dag name:asn_pipeline","logger":"task.stdout"}
+{"timestamp":"2026-02-25T16:29:51.421701Z","level":"info","event":"Downloading: https://ftp.arin.net/pub/stats/arin/delegated-arin-extended-latest","logger":"task.stdout"}
+{"timestamp":"2026-02-25T16:30:02.113529Z","level":"info","event":"Completed: https://ftp.arin.net/pub/stats/arin/delegated-arin-extended-latest","logger":"task.stdout"}
+{"timestamp":"2026-02-25T16:30:02.115313Z","level":"info","event":"Downloading: https://ftp.ripe.net/pub/stats/ripencc/delegated-ripencc-extended-latest","logger":"task.stdout"}
+{"timestamp":"2026-02-25T16:33:10.368203Z","level":"info","event":"Completed: https://ftp.ripe.net/pub/stats/ripencc/delegated-ripencc-extended-latest","logger":"task.stdout"}
+{"timestamp":"2026-02-25T16:33:10.377821Z","level":"info","event":"Downloading: https://ftp.apnic.net/pub/stats/apnic/delegated-apnic-extended-latest","logger":"task.stdout"}
+{"timestamp":"2026-02-25T16:33:19.861018Z","level":"info","event":"Completed: https://ftp.apnic.net/pub/stats/apnic/delegated-apnic-extended-latest","logger":"task.stdout"}
+{"timestamp":"2026-02-25T16:33:19.862545Z","level":"info","event":"Downloading: https://ftp.lacnic.net/pub/stats/lacnic/delegated-lacnic-extended-latest","logger":"task.stdout"}
+{"timestamp":"2026-02-25T16:33:30.187078Z","level":"info","event":"Completed: https://ftp.lacnic.net/pub/stats/lacnic/delegated-lacnic-extended-latest","logger":"task.stdout"}
+{"timestamp":"2026-02-25T16:33:30.187761Z","level":"info","event":"Downloading: https://ftp.afrinic.net/pub/stats/afrinic/delegated-afrinic-extended-latest","logger":"task.stdout"}
+{"timestamp":"2026-02-25T16:35:57.180934Z","level":"info","event":"Failed: https://ftp.afrinic.net/pub/stats/afrinic/delegated-afrinic-extended-latest → ('Connection broken: IncompleteRead(98304 bytes read, 826357 more expected)', IncompleteRead(98304 bytes read, 826357 more expected))","logger":"task.stdout"}
+{"timestamp":"2026-02-25T16:35:57.188726Z","level":"info","event":"Total ASNs fetched: 132898","logger":"task.stdout"}
+{"timestamp":"2026-02-25T16:35:58.021945Z","level":"info","event":"Done. Returned value was: 132898","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":216}
+{"timestamp":"2026-02-25T16:35:58.111433Z","level":"info","event":"Pushing xcom","ti":"RuntimeTaskInstance(id=UUID('019c95a2-3749-7f98-9e73-ad50c2ce5cc9'), task_id='extract_asn', dag_id='asn_pipeline', run_id='manual__2026-02-25T16:29:20+00:00', try_number=1, dag_version_id=UUID('019c95a1-62fb-7b39-b8ff-1ccd5ca94623'), map_index=-1, hostname='8c9e7363aafc', context_carrier={}, task=<Task(PythonOperator): extract_asn>, bundle_instance=LocalDagBundle(name=dags-folder), max_tries=0, start_date=datetime.datetime(2026, 2, 25, 16, 29, 44, 625831, tzinfo=datetime.timezone.utc), end_date=None, state=<TaskInstanceState.RUNNING: 'running'>, is_mapped=False, rendered_map_index=None)","logger":"task","filename":"task_runner.py","lineno":1450}
+{"timestamp":"2026-02-25T16:35:58.325179Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2026-02-25T16:35:58.326178Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2026-02-25T16:35:58.388389Z","level":"info","event":"Task operator:<Task(PythonOperator): extract_asn>","logger":"task.stdout"}

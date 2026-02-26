@@ -1,0 +1,12 @@
+{"timestamp":"2026-02-21T16:18:58.942009Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-02-21T16:18:58.942907Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/asn_pipeline_dag.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-02-21T16:18:59.006422Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2026-02-21T16:18:59.007051Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2026-02-21T16:18:59.007806Z","level":"info","event":"Current task name:extract_asn","logger":"task.stdout"}
+{"timestamp":"2026-02-21T16:18:59.008223Z","level":"info","event":"Dag name:asn_pipeline","logger":"task.stdout"}
+{"timestamp":"2026-02-21T16:18:59.010783Z","level":"info","event":"Downloading: https://ftp.arin.net/pub/stats/arin/delegated-arin-extended-latest","logger":"task.stdout"}
+{"timestamp":"2026-02-21T16:21:04.868795Z","level":"info","event":"ChunkedEncodingError for https://ftp.arin.net/pub/stats/arin/delegated-arin-extended-latest, retry 1/5: ('Connection broken: IncompleteRead(11550419 bytes read, 1128644 more expected)', IncompleteRead(11550419 bytes read, 1128644 more expected))","logger":"task.stdout"}
+{"timestamp":"2026-02-21T16:21:22.155412Z","level":"info","event":"Completed: https://ftp.arin.net/pub/stats/arin/delegated-arin-extended-latest","logger":"task.stdout"}
+{"timestamp":"2026-02-21T16:21:22.156386Z","level":"info","event":"Downloading: https://ftp.ripe.net/pub/stats/ripencc/delegated-ripencc-extended-latest","logger":"task.stdout"}
+{"timestamp":"2026-02-21T16:21:45.518661Z","level":"info","event":"ChunkedEncodingError for https://ftp.ripe.net/pub/stats/ripencc/delegated-ripencc-extended-latest, retry 1/5: ('Connection broken: IncompleteRead(327393 bytes read, 17411362 more expected)', IncompleteRead(327393 bytes read, 17411362 more expected))","logger":"task.stdout"}
+{"timestamp":"2026-02-21T16:23:31.419032Z","level":"critical","event":"Process terminated by signal. Likely out of memory error (OOM). For more information, see https://airflow.apache.org/docs/apache-airflow/stable/troubleshooting.html#process-terminated-by-signal.","signal":-9,"signal_name":"SIGKILL","logger":"task"}

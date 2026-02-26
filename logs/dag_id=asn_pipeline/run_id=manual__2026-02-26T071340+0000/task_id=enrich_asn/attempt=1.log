@@ -1,0 +1,56 @@
+{"timestamp":"2026-02-26T07:18:41.394321Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-02-26T07:18:41.397143Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/asn_pipeline_dag.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-02-26T07:18:41.564044Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2026-02-26T07:18:41.564870Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2026-02-26T07:18:41.565606Z","level":"info","event":"Current task name:enrich_asn","logger":"task.stdout"}
+{"timestamp":"2026-02-26T07:18:41.566074Z","level":"info","event":"Dag name:asn_pipeline","logger":"task.stdout"}
+{"timestamp":"2026-02-26T07:18:41.575903Z","level":"info","event":"Fetching PeeringDB datasets...","logger":"task.stdout"}
+{"timestamp":"2026-02-26T07:18:50.181808Z","level":"info","event":"net: fetched 1000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T07:19:01.893148Z","level":"info","event":"net: fetched 2000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T07:19:08.344911Z","level":"info","event":"net: fetched 3000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T07:19:17.427005Z","level":"info","event":"net: fetched 4000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T07:19:25.168884Z","level":"info","event":"net: fetched 5000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T07:19:37.598334Z","level":"info","event":"net: fetched 6000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T07:19:44.781401Z","level":"info","event":"net: fetched 7000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T07:19:46.056141Z","level":"info","event":"net: fetched 8000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T07:19:47.485270Z","level":"info","event":"net: fetched 9000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T07:19:48.725951Z","level":"info","event":"net: fetched 10000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T07:19:50.140222Z","level":"info","event":"net: fetched 11000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T07:19:51.347550Z","level":"info","event":"net: fetched 12000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T07:19:57.450416Z","level":"info","event":"net: fetched 13000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T07:19:59.351332Z","level":"info","event":"net: fetched 14000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T07:20:00.429789Z","level":"info","event":"net: fetched 15000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T07:20:01.879477Z","level":"info","event":"net: fetched 16000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T07:20:07.391490Z","level":"info","event":"net: fetched 17000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T07:20:08.794958Z","level":"info","event":"net: fetched 18000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T07:20:10.438690Z","level":"info","event":"net: fetched 19000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T07:20:11.633809Z","level":"info","event":"net: fetched 20000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T07:20:12.892711Z","level":"info","event":"net: fetched 21000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T07:20:19.186470Z","level":"info","event":"net: fetched 22000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T07:20:25.043543Z","level":"info","event":"net: fetched 23000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T07:20:27.726273Z","level":"info","event":"Failed fetching net","logger":"task.stdout"}
+{"timestamp":"2026-02-26T07:21:13.033686Z","level":"info","event":"netixlan: fetched 1000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T07:21:18.905720Z","level":"info","event":"netixlan: fetched 2000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T07:21:26.019353Z","level":"info","event":"netixlan: fetched 3000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T07:21:26.621284Z","level":"info","event":"netixlan: fetched 4000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T07:21:27.268692Z","level":"info","event":"netixlan: fetched 5000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T07:21:27.856988Z","level":"info","event":"netixlan: fetched 6000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T07:21:34.401008Z","level":"info","event":"netixlan: fetched 7000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T07:21:35.319815Z","level":"info","event":"netixlan: fetched 8000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T07:21:38.027097Z","level":"info","event":"netixlan: fetched 9000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T07:21:44.760301Z","level":"info","event":"netixlan: fetched 10000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T07:21:48.854255Z","level":"info","event":"netixlan: fetched 11000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T07:21:49.845930Z","level":"info","event":"netixlan: fetched 12000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T07:21:57.004794Z","level":"info","event":"Failed fetching netixlan","logger":"task.stdout"}
+{"timestamp":"2026-02-26T07:21:57.542005Z","level":"info","event":"netfac: fetched 1000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T07:21:58.847177Z","level":"info","event":"netfac: fetched 2000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T07:22:05.640257Z","level":"info","event":"Failed fetching netfac","logger":"task.stdout"}
+{"timestamp":"2026-02-26T07:22:05.640977Z","level":"info","event":"Building lookup maps...","logger":"task.stdout"}
+{"timestamp":"2026-02-26T07:22:05.670283Z","level":"info","event":"Connecting to Postgres...","logger":"task.stdout"}
+{"timestamp":"2026-02-26T07:22:05.821962Z","level":"info","event":"Joining 130816 ASNs...","logger":"task.stdout"}
+{"timestamp":"2026-02-26T07:22:05.869538Z","level":"info","event":"Inserting 22195 enriched ASNs...","logger":"task.stdout"}
+{"timestamp":"2026-02-26T07:22:06.324605Z","level":"info","event":"Enrichment completed successfully.","logger":"task.stdout"}
+{"timestamp":"2026-02-26T07:22:06.379124Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":216}
+{"timestamp":"2026-02-26T07:22:06.405072Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2026-02-26T07:22:06.405861Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2026-02-26T07:22:06.406780Z","level":"info","event":"Task operator:<Task(PythonOperator): enrich_asn>","logger":"task.stdout"}
