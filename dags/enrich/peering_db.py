@@ -303,38 +303,51 @@
 import requests
 import psycopg2
 import os
+import time
 from psycopg2.extras import execute_values
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 
 PEERINGDB_API = "https://www.peeringdb.com/api"
 
+
 def create_session():
     session = requests.Session()
+
     retry = Retry(
-        total=5,
-        backoff_factor=2,
-        status_forcelist=[500, 502, 503, 504],
-        allowed_methods=["GET"]
+        total=6,
+        backoff_factor=3,
+        status_forcelist=[429, 500, 502, 503, 504],
+        allowed_methods=["GET"],
+        raise_on_status=False
     )
+
     adapter = HTTPAdapter(max_retries=retry)
     session.mount("https://", adapter)
+
+    session.headers.update({
+        "User-Agent": "Airflow-ASN-Research/1.0 (research)",
+        "Accept": "application/json"
+    })
+
     return session
 
 
 def fetch_all(endpoint, session):
-    """Handles PeeringDB pagination"""
     results = []
     limit = 1000
     skip = 0
 
     while True:
         url = f"{PEERINGDB_API}/{endpoint}?limit={limit}&skip={skip}"
-        response = session.get(url, timeout=120)
+        print(f"Requesting {url}")
+
+        response = session.get(url, timeout=180)
 
         if response.status_code != 200:
-            print(f"Failed fetching {endpoint}")
-            break
+            print(f"ERROR {endpoint} - Status: {response.status_code}")
+            print(response.text[:300])
+            raise Exception(f"PeeringDB API failure on {endpoint}")
 
         payload = response.json()
         data = payload.get("data", [])
@@ -345,7 +358,11 @@ def fetch_all(endpoint, session):
         results.extend(data)
         skip += limit
 
-        print(f"{endpoint}: fetched {len(results)}")
+        print(f"{endpoint}: total fetched {len(results)}")
+        time.sleep(0.5)
+
+    if not results:
+        raise Exception(f"No data returned from {endpoint}")
 
     return results
 
@@ -353,8 +370,6 @@ def fetch_all(endpoint, session):
 def enrich_asn(**context):
 
     session = create_session()
-    headers = {"User-Agent": "Airflow-ASN-Research/1.0"}
-    session.headers.update(headers)
 
     print("Fetching PeeringDB datasets...")
 
@@ -422,6 +437,9 @@ def enrich_asn(**context):
                 ixp_map.get(net_id, 0),
                 fac_map.get(net_id, 0)
             ))
+
+    if not insert_data:
+        raise Exception("Enrichment resulted in 0 rows — API likely blocked")
 
     print(f"Inserting {len(insert_data)} enriched ASNs...")
 

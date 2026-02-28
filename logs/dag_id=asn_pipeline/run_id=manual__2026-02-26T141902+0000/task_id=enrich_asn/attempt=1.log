@@ -1,0 +1,20 @@
+{"timestamp":"2026-02-26T14:25:48.660312Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-02-26T14:25:48.668969Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/asn_pipeline_dag.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-02-26T14:25:49.109135Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:25:49.110640Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:25:49.113011Z","level":"info","event":"Current task name:enrich_asn","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:25:49.114456Z","level":"info","event":"Dag name:asn_pipeline","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:25:49.147906Z","level":"info","event":"Fetching PeeringDB datasets...","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:25:53.563593Z","level":"info","event":"Failed fetching net","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:25:55.898707Z","level":"info","event":"netixlan: fetched 1000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:25:57.596977Z","level":"info","event":"Failed fetching netixlan","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:26:00.277724Z","level":"info","event":"Failed fetching netfac","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:26:00.279010Z","level":"info","event":"Building lookup maps...","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:26:00.280347Z","level":"info","event":"Connecting to Postgres...","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:26:00.485354Z","level":"info","event":"Joining 134142 ASNs...","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:26:00.492829Z","level":"info","event":"Inserting 0 enriched ASNs...","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:26:00.501427Z","level":"info","event":"Enrichment completed successfully.","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:26:00.546515Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":216}
+{"timestamp":"2026-02-26T14:26:00.599760Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:26:00.600547Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:26:00.601220Z","level":"info","event":"Task operator:<Task(PythonOperator): enrich_asn>","logger":"task.stdout"}

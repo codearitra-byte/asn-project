@@ -30,3 +30,382 @@
 {"timestamp":"2026-02-26T07:21:10.192545Z","level":"info","event":"net: fetched 4000","logger":"task.stdout"}
 {"timestamp":"2026-02-26T07:21:13.465011Z","level":"info","event":"net: fetched 5000","logger":"task.stdout"}
 {"timestamp":"2026-02-26T07:21:32.643571Z","level":"info","event":"net: fetched 6000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:24:47.213459Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-02-26T14:24:47.215770Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/asn_pipeline_dag.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-02-26T14:24:47.364746Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:24:47.365623Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:24:47.366322Z","level":"info","event":"Current task name:enrich_asn","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:24:47.366827Z","level":"info","event":"Dag name:asn_pipeline","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:24:47.380735Z","level":"info","event":"Fetching PeeringDB datasets...","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:24:52.373492Z","level":"info","event":"net: fetched 1000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:24:54.344938Z","level":"info","event":"net: fetched 2000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:24:55.973412Z","level":"info","event":"net: fetched 3000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:24:57.912872Z","level":"info","event":"net: fetched 4000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:25:00.703370Z","level":"info","event":"net: fetched 5000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:25:03.270410Z","level":"info","event":"net: fetched 6000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:25:05.555727Z","level":"info","event":"net: fetched 7000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:25:07.670368Z","level":"info","event":"net: fetched 8000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:25:10.008976Z","level":"info","event":"net: fetched 9000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:25:12.549575Z","level":"info","event":"net: fetched 10000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:25:14.771737Z","level":"info","event":"net: fetched 11000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:25:17.355604Z","level":"info","event":"net: fetched 12000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:25:19.490707Z","level":"info","event":"net: fetched 13000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:25:21.925355Z","level":"info","event":"net: fetched 14000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:25:24.189223Z","level":"info","event":"net: fetched 15000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:25:25.962375Z","level":"info","event":"net: fetched 16000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:25:28.318372Z","level":"info","event":"net: fetched 17000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:25:30.100192Z","level":"info","event":"net: fetched 18000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:25:32.201403Z","level":"info","event":"net: fetched 19000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:25:33.762471Z","level":"info","event":"net: fetched 20000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:25:51.883413Z","level":"info","event":"net: fetched 21000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:25:54.169532Z","level":"info","event":"Failed fetching net","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:25:55.875554Z","level":"info","event":"Failed fetching netixlan","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:25:56.564188Z","level":"info","event":"netfac: fetched 1000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:25:57.239028Z","level":"info","event":"netfac: fetched 2000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:25:59.939496Z","level":"info","event":"Failed fetching netfac","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:25:59.943179Z","level":"info","event":"Building lookup maps...","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:26:14.293512Z","level":"info","event":"Connecting to Postgres...","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:26:14.505033Z","level":"info","event":"Joining 134142 ASNs...","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:26:14.572632Z","level":"info","event":"Inserting 21000 enriched ASNs...","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:26:15.756579Z","level":"info","event":"Enrichment completed successfully.","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:26:16.027377Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":216}
+{"timestamp":"2026-02-26T14:26:16.114628Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:26:16.115510Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:26:16.118040Z","level":"info","event":"Task operator:<Task(PythonOperator): enrich_asn>","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:39:43.583908Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-02-26T14:39:43.590691Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/asn_pipeline_dag.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-02-26T14:39:43.731579Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:39:43.732145Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:39:43.732460Z","level":"info","event":"Current task name:enrich_asn","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:39:43.732805Z","level":"info","event":"Dag name:asn_pipeline","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:39:43.743980Z","level":"info","event":"Fetching PeeringDB datasets...","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:39:43.744496Z","level":"info","event":"Requesting https://www.peeringdb.com/api/net?limit=1000&skip=0","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:26:00.340017Z","level":"info","event":"net: total fetched 1000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:26:00.829809Z","level":"info","event":"Requesting https://www.peeringdb.com/api/net?limit=1000&skip=1000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:26:03.451660Z","level":"info","event":"net: total fetched 2000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:26:03.950509Z","level":"info","event":"Requesting https://www.peeringdb.com/api/net?limit=1000&skip=2000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:26:07.750618Z","level":"info","event":"net: total fetched 3000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:26:08.251072Z","level":"info","event":"Requesting https://www.peeringdb.com/api/net?limit=1000&skip=3000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:26:12.213620Z","level":"info","event":"net: total fetched 4000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:26:12.713900Z","level":"info","event":"Requesting https://www.peeringdb.com/api/net?limit=1000&skip=4000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:26:15.088111Z","level":"info","event":"net: total fetched 5000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:26:15.588399Z","level":"info","event":"Requesting https://www.peeringdb.com/api/net?limit=1000&skip=5000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:26:19.481739Z","level":"info","event":"net: total fetched 6000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:26:19.981814Z","level":"info","event":"Requesting https://www.peeringdb.com/api/net?limit=1000&skip=6000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:26:24.604116Z","level":"info","event":"net: total fetched 7000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:26:25.104363Z","level":"info","event":"Requesting https://www.peeringdb.com/api/net?limit=1000&skip=7000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:26:27.697549Z","level":"info","event":"net: total fetched 8000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:26:28.197779Z","level":"info","event":"Requesting https://www.peeringdb.com/api/net?limit=1000&skip=8000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:26:30.179646Z","level":"info","event":"net: total fetched 9000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:26:32.627147Z","level":"info","event":"Requesting https://www.peeringdb.com/api/net?limit=1000&skip=9000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:26:33.732669Z","level":"info","event":"net: total fetched 10000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:26:34.236819Z","level":"info","event":"Requesting https://www.peeringdb.com/api/net?limit=1000&skip=10000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:26:36.877321Z","level":"info","event":"net: total fetched 11000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:26:37.377466Z","level":"info","event":"Requesting https://www.peeringdb.com/api/net?limit=1000&skip=11000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:26:58.613269Z","level":"info","event":"net: total fetched 12000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:26:59.115686Z","level":"info","event":"Requesting https://www.peeringdb.com/api/net?limit=1000&skip=12000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:27:22.368983Z","level":"info","event":"net: total fetched 13000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:27:22.868680Z","level":"info","event":"Requesting https://www.peeringdb.com/api/net?limit=1000&skip=13000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:27:25.699213Z","level":"info","event":"net: total fetched 14000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:27:26.199520Z","level":"info","event":"Requesting https://www.peeringdb.com/api/net?limit=1000&skip=14000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:27:28.280317Z","level":"info","event":"net: total fetched 15000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:27:28.780595Z","level":"info","event":"Requesting https://www.peeringdb.com/api/net?limit=1000&skip=15000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:27:31.431222Z","level":"info","event":"net: total fetched 16000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:27:31.931378Z","level":"info","event":"Requesting https://www.peeringdb.com/api/net?limit=1000&skip=16000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:27:34.295193Z","level":"info","event":"net: total fetched 17000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:27:34.795411Z","level":"info","event":"Requesting https://www.peeringdb.com/api/net?limit=1000&skip=17000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:27:37.220008Z","level":"info","event":"net: total fetched 18000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:27:37.720265Z","level":"info","event":"Requesting https://www.peeringdb.com/api/net?limit=1000&skip=18000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:27:39.399640Z","level":"info","event":"net: total fetched 19000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:27:39.899808Z","level":"info","event":"Requesting https://www.peeringdb.com/api/net?limit=1000&skip=19000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:27:41.803083Z","level":"info","event":"net: total fetched 20000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:27:42.303281Z","level":"info","event":"Requesting https://www.peeringdb.com/api/net?limit=1000&skip=20000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:27:44.140344Z","level":"info","event":"net: total fetched 21000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:27:44.640555Z","level":"info","event":"Requesting https://www.peeringdb.com/api/net?limit=1000&skip=21000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:27:46.318419Z","level":"info","event":"net: total fetched 22000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:27:46.818261Z","level":"info","event":"Requesting https://www.peeringdb.com/api/net?limit=1000&skip=22000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:27:48.312022Z","level":"info","event":"net: total fetched 23000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:27:48.812299Z","level":"info","event":"Requesting https://www.peeringdb.com/api/net?limit=1000&skip=23000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:27:50.965049Z","level":"info","event":"net: total fetched 24000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:27:51.465371Z","level":"info","event":"Requesting https://www.peeringdb.com/api/net?limit=1000&skip=24000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:27:53.177632Z","level":"info","event":"net: total fetched 25000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:27:53.677929Z","level":"info","event":"Requesting https://www.peeringdb.com/api/net?limit=1000&skip=25000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:27:55.194449Z","level":"info","event":"net: total fetched 26000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:27:55.694837Z","level":"info","event":"Requesting https://www.peeringdb.com/api/net?limit=1000&skip=26000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:27:57.368801Z","level":"info","event":"net: total fetched 27000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:27:57.869213Z","level":"info","event":"Requesting https://www.peeringdb.com/api/net?limit=1000&skip=27000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:28:04.549247Z","level":"info","event":"net: total fetched 28000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:28:05.049452Z","level":"info","event":"Requesting https://www.peeringdb.com/api/net?limit=1000&skip=28000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:28:07.087252Z","level":"info","event":"net: total fetched 29000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:28:07.587494Z","level":"info","event":"Requesting https://www.peeringdb.com/api/net?limit=1000&skip=29000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:28:09.443557Z","level":"info","event":"net: total fetched 30000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:28:09.944640Z","level":"info","event":"Requesting https://www.peeringdb.com/api/net?limit=1000&skip=30000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:28:11.490187Z","level":"info","event":"net: total fetched 31000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:28:12.000652Z","level":"info","event":"Requesting https://www.peeringdb.com/api/net?limit=1000&skip=31000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:29:13.559287Z","level":"info","event":"net: total fetched 32000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:29:14.059765Z","level":"info","event":"Requesting https://www.peeringdb.com/api/net?limit=1000&skip=32000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:29:15.422771Z","level":"info","event":"net: total fetched 33000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:29:15.923091Z","level":"info","event":"Requesting https://www.peeringdb.com/api/net?limit=1000&skip=33000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:29:17.356447Z","level":"info","event":"net: total fetched 34000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:29:17.856635Z","level":"info","event":"Requesting https://www.peeringdb.com/api/net?limit=1000&skip=34000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:29:18.672944Z","level":"info","event":"net: total fetched 34056","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:29:19.172889Z","level":"info","event":"Requesting https://www.peeringdb.com/api/net?limit=1000&skip=35000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:29:19.946878Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netixlan?limit=1000&skip=0","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:29:21.043355Z","level":"info","event":"netixlan: total fetched 1000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:29:21.543612Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netixlan?limit=1000&skip=1000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:29:22.603638Z","level":"info","event":"netixlan: total fetched 2000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:29:23.103930Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netixlan?limit=1000&skip=2000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:29:24.259430Z","level":"info","event":"netixlan: total fetched 3000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:29:24.759737Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netixlan?limit=1000&skip=3000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:29:33.106807Z","level":"info","event":"netixlan: total fetched 4000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:29:33.607246Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netixlan?limit=1000&skip=4000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:29:34.834282Z","level":"info","event":"netixlan: total fetched 5000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:29:35.334443Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netixlan?limit=1000&skip=5000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:29:36.107658Z","level":"info","event":"netixlan: total fetched 6000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:29:36.608013Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netixlan?limit=1000&skip=6000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:29:37.643004Z","level":"info","event":"netixlan: total fetched 7000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:29:38.143192Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netixlan?limit=1000&skip=7000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:29:38.993852Z","level":"info","event":"netixlan: total fetched 8000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:29:39.494077Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netixlan?limit=1000&skip=8000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:29:40.531072Z","level":"info","event":"netixlan: total fetched 9000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:29:41.032018Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netixlan?limit=1000&skip=9000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:29:41.851838Z","level":"info","event":"netixlan: total fetched 10000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:29:42.352167Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netixlan?limit=1000&skip=10000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:29:43.667856Z","level":"info","event":"netixlan: total fetched 11000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:29:44.168026Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netixlan?limit=1000&skip=11000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:29:45.057783Z","level":"info","event":"netixlan: total fetched 12000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:29:45.557962Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netixlan?limit=1000&skip=12000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:29:46.285353Z","level":"info","event":"netixlan: total fetched 13000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:29:46.785572Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netixlan?limit=1000&skip=13000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:29:47.561352Z","level":"info","event":"netixlan: total fetched 14000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:29:48.061640Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netixlan?limit=1000&skip=14000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:29:48.872416Z","level":"info","event":"netixlan: total fetched 15000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:29:49.372748Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netixlan?limit=1000&skip=15000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:30:13.466743Z","level":"info","event":"netixlan: total fetched 16000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:30:13.967003Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netixlan?limit=1000&skip=16000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:30:35.564960Z","level":"info","event":"netixlan: total fetched 17000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:30:36.065097Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netixlan?limit=1000&skip=17000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:30:39.187466Z","level":"info","event":"netixlan: total fetched 18000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:30:39.687796Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netixlan?limit=1000&skip=18000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:30:42.610138Z","level":"info","event":"netixlan: total fetched 19000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:30:43.110424Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netixlan?limit=1000&skip=19000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:30:43.890692Z","level":"info","event":"netixlan: total fetched 20000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:30:44.390932Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netixlan?limit=1000&skip=20000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:30:45.160125Z","level":"info","event":"netixlan: total fetched 21000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:30:45.660472Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netixlan?limit=1000&skip=21000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:30:46.411364Z","level":"info","event":"netixlan: total fetched 22000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:30:46.911798Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netixlan?limit=1000&skip=22000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:30:47.593411Z","level":"info","event":"netixlan: total fetched 23000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:30:48.093630Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netixlan?limit=1000&skip=23000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:30:48.793343Z","level":"info","event":"netixlan: total fetched 24000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:30:49.293678Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netixlan?limit=1000&skip=24000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:30:50.019124Z","level":"info","event":"netixlan: total fetched 25000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:30:50.519348Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netixlan?limit=1000&skip=25000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:30:51.226532Z","level":"info","event":"netixlan: total fetched 26000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:30:51.726838Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netixlan?limit=1000&skip=26000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:30:52.519028Z","level":"info","event":"netixlan: total fetched 27000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:30:53.019284Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netixlan?limit=1000&skip=27000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:30:53.801749Z","level":"info","event":"netixlan: total fetched 28000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:30:54.302123Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netixlan?limit=1000&skip=28000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:30:55.093683Z","level":"info","event":"netixlan: total fetched 29000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:30:55.593904Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netixlan?limit=1000&skip=29000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:30:56.377864Z","level":"info","event":"netixlan: total fetched 30000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:30:56.878408Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netixlan?limit=1000&skip=30000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:30:58.310282Z","level":"info","event":"netixlan: total fetched 31000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:30:58.810495Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netixlan?limit=1000&skip=31000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:30:59.577451Z","level":"info","event":"netixlan: total fetched 32000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:31:00.077829Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netixlan?limit=1000&skip=32000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:31:00.852231Z","level":"info","event":"netixlan: total fetched 33000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:31:01.352698Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netixlan?limit=1000&skip=33000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:31:02.125377Z","level":"info","event":"netixlan: total fetched 34000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:31:02.625691Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netixlan?limit=1000&skip=34000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:31:07.361800Z","level":"info","event":"netixlan: total fetched 35000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:31:07.861979Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netixlan?limit=1000&skip=35000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:31:32.852379Z","level":"info","event":"netixlan: total fetched 36000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:31:33.352236Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netixlan?limit=1000&skip=36000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:31:54.594964Z","level":"info","event":"netixlan: total fetched 37000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:31:55.095623Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netixlan?limit=1000&skip=37000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:31:56.238392Z","level":"info","event":"netixlan: total fetched 38000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:31:56.738558Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netixlan?limit=1000&skip=38000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:31:57.505595Z","level":"info","event":"netixlan: total fetched 39000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:31:58.006320Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netixlan?limit=1000&skip=39000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:31:58.761882Z","level":"info","event":"netixlan: total fetched 40000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:31:59.262108Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netixlan?limit=1000&skip=40000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:32:00.035436Z","level":"info","event":"netixlan: total fetched 41000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:32:00.535678Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netixlan?limit=1000&skip=41000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:32:01.318210Z","level":"info","event":"netixlan: total fetched 42000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:32:01.818397Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netixlan?limit=1000&skip=42000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:32:02.594318Z","level":"info","event":"netixlan: total fetched 43000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:32:03.094482Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netixlan?limit=1000&skip=43000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:32:03.883191Z","level":"info","event":"netixlan: total fetched 44000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:32:04.383348Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netixlan?limit=1000&skip=44000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:32:05.162697Z","level":"info","event":"netixlan: total fetched 45000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:32:05.662845Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netixlan?limit=1000&skip=45000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:32:06.442153Z","level":"info","event":"netixlan: total fetched 46000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:32:06.942399Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netixlan?limit=1000&skip=46000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:32:07.724867Z","level":"info","event":"netixlan: total fetched 47000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:32:08.226621Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netixlan?limit=1000&skip=47000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:32:09.004713Z","level":"info","event":"netixlan: total fetched 48000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:32:09.504950Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netixlan?limit=1000&skip=48000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:32:10.349602Z","level":"info","event":"netixlan: total fetched 49000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:32:10.849847Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netixlan?limit=1000&skip=49000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:32:11.579730Z","level":"info","event":"netixlan: total fetched 50000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:32:12.080072Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netixlan?limit=1000&skip=50000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:32:12.855712Z","level":"info","event":"netixlan: total fetched 51000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:32:13.356059Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netixlan?limit=1000&skip=51000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:32:14.360640Z","level":"info","event":"netixlan: total fetched 52000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:32:14.861098Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netixlan?limit=1000&skip=52000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:32:15.767518Z","level":"info","event":"netixlan: total fetched 53000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:32:16.267951Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netixlan?limit=1000&skip=53000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:32:17.103599Z","level":"info","event":"netixlan: total fetched 54000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:32:17.603948Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netixlan?limit=1000&skip=54000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:32:18.419196Z","level":"info","event":"netixlan: total fetched 55000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:32:18.919371Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netixlan?limit=1000&skip=55000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:32:33.366669Z","level":"info","event":"netixlan: total fetched 56000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:32:33.864731Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netixlan?limit=1000&skip=56000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:32:55.154171Z","level":"info","event":"netixlan: total fetched 57000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:32:55.654400Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netixlan?limit=1000&skip=57000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:32:57.099109Z","level":"info","event":"netixlan: total fetched 58000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:32:57.599558Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netixlan?limit=1000&skip=58000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:32:58.781907Z","level":"info","event":"netixlan: total fetched 59000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:32:59.282139Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netixlan?limit=1000&skip=59000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:33:00.176010Z","level":"info","event":"netixlan: total fetched 60000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:33:00.676264Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netixlan?limit=1000&skip=60000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:33:01.759375Z","level":"info","event":"netixlan: total fetched 61000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:33:02.259767Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netixlan?limit=1000&skip=61000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:33:03.502705Z","level":"info","event":"netixlan: total fetched 62000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:33:03.999015Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netixlan?limit=1000&skip=62000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:33:04.856248Z","level":"info","event":"netixlan: total fetched 63000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:33:05.356501Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netixlan?limit=1000&skip=63000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:33:06.184017Z","level":"info","event":"netixlan: total fetched 63124","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:33:06.685105Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netixlan?limit=1000&skip=64000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:33:07.321522Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netfac?limit=1000&skip=0","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:33:07.917212Z","level":"info","event":"netfac: total fetched 1000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:33:08.417358Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netfac?limit=1000&skip=1000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:33:09.227305Z","level":"info","event":"netfac: total fetched 2000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:33:09.727869Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netfac?limit=1000&skip=2000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:33:10.420391Z","level":"info","event":"netfac: total fetched 3000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:33:10.920543Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netfac?limit=1000&skip=3000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:33:11.636293Z","level":"info","event":"netfac: total fetched 4000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:33:12.136507Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netfac?limit=1000&skip=4000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:33:12.724198Z","level":"info","event":"netfac: total fetched 5000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:33:13.224501Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netfac?limit=1000&skip=5000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:33:13.785971Z","level":"info","event":"netfac: total fetched 6000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:33:14.286122Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netfac?limit=1000&skip=6000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:33:14.874512Z","level":"info","event":"netfac: total fetched 7000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:33:15.374723Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netfac?limit=1000&skip=7000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:33:15.999518Z","level":"info","event":"netfac: total fetched 8000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:33:16.500249Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netfac?limit=1000&skip=8000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:33:17.122590Z","level":"info","event":"netfac: total fetched 9000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:33:17.622767Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netfac?limit=1000&skip=9000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:33:18.201804Z","level":"info","event":"netfac: total fetched 10000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:33:18.702587Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netfac?limit=1000&skip=10000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:33:33.847650Z","level":"info","event":"netfac: total fetched 11000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:33:34.341594Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netfac?limit=1000&skip=11000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:33:56.236032Z","level":"info","event":"netfac: total fetched 12000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:33:56.736274Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netfac?limit=1000&skip=12000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:33:57.283008Z","level":"info","event":"netfac: total fetched 13000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:33:57.783340Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netfac?limit=1000&skip=13000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:33:58.435830Z","level":"info","event":"netfac: total fetched 14000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:33:58.935972Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netfac?limit=1000&skip=14000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:34:19.919806Z","level":"info","event":"netfac: total fetched 15000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:34:20.419916Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netfac?limit=1000&skip=15000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:34:21.186392Z","level":"info","event":"netfac: total fetched 16000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:34:21.686601Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netfac?limit=1000&skip=16000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:34:22.298138Z","level":"info","event":"netfac: total fetched 17000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:34:22.798666Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netfac?limit=1000&skip=17000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:34:23.565364Z","level":"info","event":"netfac: total fetched 18000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:34:24.065555Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netfac?limit=1000&skip=18000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:34:24.715817Z","level":"info","event":"netfac: total fetched 19000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:34:25.216068Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netfac?limit=1000&skip=19000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:34:25.782578Z","level":"info","event":"netfac: total fetched 20000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:34:26.283101Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netfac?limit=1000&skip=20000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:34:26.945295Z","level":"info","event":"netfac: total fetched 21000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:34:27.445612Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netfac?limit=1000&skip=21000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:34:28.144987Z","level":"info","event":"netfac: total fetched 22000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:34:28.645235Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netfac?limit=1000&skip=22000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:34:29.315352Z","level":"info","event":"netfac: total fetched 23000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:34:29.815578Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netfac?limit=1000&skip=23000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:34:30.470969Z","level":"info","event":"netfac: total fetched 24000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:34:30.971254Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netfac?limit=1000&skip=24000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:34:31.728298Z","level":"info","event":"netfac: total fetched 25000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:34:32.228599Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netfac?limit=1000&skip=25000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:34:33.014634Z","level":"info","event":"netfac: total fetched 26000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:34:33.515073Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netfac?limit=1000&skip=26000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:34:34.143611Z","level":"info","event":"netfac: total fetched 27000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:34:34.644680Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netfac?limit=1000&skip=27000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:34:35.346490Z","level":"info","event":"netfac: total fetched 28000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:34:35.846551Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netfac?limit=1000&skip=28000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:34:36.561499Z","level":"info","event":"netfac: total fetched 29000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:34:37.061769Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netfac?limit=1000&skip=29000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:34:37.692209Z","level":"info","event":"netfac: total fetched 30000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:34:38.192337Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netfac?limit=1000&skip=30000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:34:38.850239Z","level":"info","event":"netfac: total fetched 31000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:34:39.350418Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netfac?limit=1000&skip=31000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:34:57.326878Z","level":"info","event":"netfac: total fetched 32000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:34:57.827667Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netfac?limit=1000&skip=32000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:34:58.416287Z","level":"info","event":"netfac: total fetched 33000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:34:58.917029Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netfac?limit=1000&skip=33000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:34:59.552242Z","level":"info","event":"netfac: total fetched 34000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:35:00.052363Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netfac?limit=1000&skip=34000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:35:23.459251Z","level":"info","event":"netfac: total fetched 35000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:35:23.959650Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netfac?limit=1000&skip=35000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:35:24.515563Z","level":"info","event":"netfac: total fetched 36000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:35:25.015652Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netfac?limit=1000&skip=36000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:35:25.708185Z","level":"info","event":"netfac: total fetched 37000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:35:26.208300Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netfac?limit=1000&skip=37000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:35:26.789842Z","level":"info","event":"netfac: total fetched 38000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:35:27.289956Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netfac?limit=1000&skip=38000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:35:28.212390Z","level":"info","event":"netfac: total fetched 39000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:35:28.712629Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netfac?limit=1000&skip=39000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:35:29.417847Z","level":"info","event":"netfac: total fetched 40000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:35:29.917965Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netfac?limit=1000&skip=40000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:35:30.491332Z","level":"info","event":"netfac: total fetched 41000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:35:30.991584Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netfac?limit=1000&skip=41000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:35:34.072656Z","level":"info","event":"netfac: total fetched 42000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:35:34.572897Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netfac?limit=1000&skip=42000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:35:35.428582Z","level":"info","event":"netfac: total fetched 43000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:35:35.929043Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netfac?limit=1000&skip=43000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:35:36.435771Z","level":"info","event":"netfac: total fetched 44000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:35:36.936384Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netfac?limit=1000&skip=44000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:35:37.499686Z","level":"info","event":"netfac: total fetched 45000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:35:38.000566Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netfac?limit=1000&skip=45000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:35:38.964512Z","level":"info","event":"netfac: total fetched 46000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:35:39.464726Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netfac?limit=1000&skip=46000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:35:40.048510Z","level":"info","event":"netfac: total fetched 47000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:35:40.548679Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netfac?limit=1000&skip=47000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:35:41.100165Z","level":"info","event":"netfac: total fetched 48000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:35:41.600353Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netfac?limit=1000&skip=48000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:35:42.114873Z","level":"info","event":"netfac: total fetched 49000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:35:42.615084Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netfac?limit=1000&skip=49000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:35:43.218127Z","level":"info","event":"netfac: total fetched 50000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:35:43.718330Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netfac?limit=1000&skip=50000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:35:44.277676Z","level":"info","event":"netfac: total fetched 51000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:35:44.778514Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netfac?limit=1000&skip=51000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:35:57.757086Z","level":"info","event":"netfac: total fetched 52000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:35:58.257328Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netfac?limit=1000&skip=52000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:35:58.807114Z","level":"info","event":"netfac: total fetched 53000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:35:59.307438Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netfac?limit=1000&skip=53000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:35:59.870880Z","level":"info","event":"netfac: total fetched 54000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:36:00.371068Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netfac?limit=1000&skip=54000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:36:22.415819Z","level":"info","event":"netfac: total fetched 55000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:36:22.916078Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netfac?limit=1000&skip=55000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:36:44.811551Z","level":"info","event":"netfac: total fetched 56000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:36:45.312359Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netfac?limit=1000&skip=56000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:36:46.103716Z","level":"info","event":"netfac: total fetched 57000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:36:46.603922Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netfac?limit=1000&skip=57000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:36:47.289845Z","level":"info","event":"netfac: total fetched 58000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:36:47.792427Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netfac?limit=1000&skip=58000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:36:48.614055Z","level":"info","event":"netfac: total fetched 59000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:36:49.114229Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netfac?limit=1000&skip=59000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:36:49.624216Z","level":"info","event":"netfac: total fetched 59305","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:36:50.124373Z","level":"info","event":"Requesting https://www.peeringdb.com/api/netfac?limit=1000&skip=60000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:36:50.594279Z","level":"info","event":"Building lookup maps...","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:36:50.779110Z","level":"info","event":"Connecting to Postgres...","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:36:51.111093Z","level":"info","event":"Joining 130816 ASNs...","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:36:51.229508Z","level":"info","event":"Inserting 32712 enriched ASNs...","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:36:52.398264Z","level":"info","event":"Enrichment completed successfully.","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:36:52.610649Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":216}
+{"timestamp":"2026-02-26T15:36:52.657842Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:36:52.658447Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2026-02-26T15:36:52.659901Z","level":"info","event":"Task operator:<Task(PythonOperator): enrich_asn>","logger":"task.stdout"}

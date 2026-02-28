@@ -1,0 +1,44 @@
+{"timestamp":"2026-02-26T14:19:57.003671Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-02-26T14:19:57.006843Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/asn_pipeline_dag.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-02-26T14:19:57.257955Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:19:57.259067Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:19:57.261148Z","level":"info","event":"Current task name:extract_asn","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:19:57.263266Z","level":"info","event":"Dag name:asn_pipeline","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:19:57.279648Z","level":"info","event":"Downloading: https://ftp.arin.net/pub/stats/arin/delegated-arin-extended-latest","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:20:13.291199Z","level":"info","event":"Downloading: https://ftp.ripe.net/pub/stats/ripencc/delegated-ripencc-extended-latest","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:20:43.755874Z","level":"info","event":"Downloading: https://ftp.apnic.net/pub/stats/apnic/delegated-apnic-extended-latest","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:20:59.891833Z","level":"info","event":"Downloading: https://ftp.lacnic.net/pub/stats/lacnic/delegated-lacnic-extended-latest","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:21:10.640609Z","level":"info","event":"Downloading: https://ftp.afrinic.net/pub/stats/afrinic/delegated-afrinic-extended-latest","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:25:37.745737Z","level":"info","event":"Total ASNs fetched: 134142","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:25:38.048796Z","level":"info","event":"Inserted 0 → 5000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:25:38.225168Z","level":"info","event":"Inserted 5000 → 10000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:25:38.366086Z","level":"info","event":"Inserted 10000 → 15000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:25:38.507419Z","level":"info","event":"Inserted 15000 → 20000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:25:38.650026Z","level":"info","event":"Inserted 20000 → 25000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:25:38.843128Z","level":"info","event":"Inserted 25000 → 30000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:25:38.982551Z","level":"info","event":"Inserted 30000 → 35000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:25:39.110073Z","level":"info","event":"Inserted 35000 → 40000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:25:39.264199Z","level":"info","event":"Inserted 40000 → 45000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:25:39.439735Z","level":"info","event":"Inserted 45000 → 50000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:25:39.561877Z","level":"info","event":"Inserted 50000 → 55000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:25:39.678883Z","level":"info","event":"Inserted 55000 → 60000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:25:39.810859Z","level":"info","event":"Inserted 60000 → 65000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:25:39.949794Z","level":"info","event":"Inserted 65000 → 70000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:25:40.109303Z","level":"info","event":"Inserted 70000 → 75000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:25:40.254239Z","level":"info","event":"Inserted 75000 → 80000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:25:40.426044Z","level":"info","event":"Inserted 80000 → 85000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:25:40.583153Z","level":"info","event":"Inserted 85000 → 90000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:25:40.751451Z","level":"info","event":"Inserted 90000 → 95000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:25:40.918644Z","level":"info","event":"Inserted 95000 → 100000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:25:41.066779Z","level":"info","event":"Inserted 100000 → 105000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:25:41.207790Z","level":"info","event":"Inserted 105000 → 110000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:25:41.347750Z","level":"info","event":"Inserted 110000 → 115000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:25:41.501224Z","level":"info","event":"Inserted 115000 → 120000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:25:41.646382Z","level":"info","event":"Inserted 120000 → 125000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:25:41.803440Z","level":"info","event":"Inserted 125000 → 130000","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:25:41.907362Z","level":"info","event":"Inserted 130000 → 134142","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:25:41.908349Z","level":"info","event":"ASN load completed successfully.","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:25:42.419898Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":216}
+{"timestamp":"2026-02-26T14:25:42.678046Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:25:42.686008Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2026-02-26T14:25:42.732775Z","level":"info","event":"Task operator:<Task(PythonOperator): extract_asn>","logger":"task.stdout"}
